@@ -87,8 +87,6 @@ def img_predict():
     annotated_path = save_image(annotated_img, ANNOTATED_DIR, "annotated")
     print(f"Annotated image saved to {annotated_path}")
 
-    # 可选：返回图片访问 URL（需要在 Flask 中配置静态路由或直接返回路径）
-    # 假设你设置了 /static 目录映射，可返回 /static/uploaded_images/original_xxx.jpggit init
     return flask.jsonify({
         'success': True,
         'num_detections': len(detections),

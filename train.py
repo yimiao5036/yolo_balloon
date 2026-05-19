@@ -1,4 +1,4 @@
-# train.py
+
 from click.core import batch
 from ultralytics import YOLO
 import torch
@@ -8,7 +8,7 @@ def train_yolov8():
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     print(f"Using device: {device}")
 
-    # 2. 加载预训练模型（nano 版本，速度快；也可选 s, m, l, x）
+    # 2. 加载预训练模型
     model = YOLO('yolo26n.pt')  # 自动下载预训练权重
 
     # 3. 开始训练
@@ -69,6 +69,3 @@ if __name__ == '__main__':
     # 训练
     trained_model = train_yolov8()
 
-    # # 验证最佳模型
-    # validate_model('save_models/yolo26s-yolov8n-best.pt',
-    #                r'D:\ProgramData\前端实习\代码记录\YOLOV8\dataset\data.yaml')
