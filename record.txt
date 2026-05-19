@@ -1,0 +1,7 @@
+# 个人觉得“√”的更加适合本次使用
+v26
+yolo26n:15 balloons  28.0ms  √（模型最小仅有约5.2Mb）
+yolo26s:15 balloons  28.3ms  √
+yolo26m:14 balloons  53.8ms
+v8
+yolov8n:20 balloons  19.5ms

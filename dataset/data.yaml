@@ -1,0 +1,9 @@
+path: D:/ProgramData/前端实习/代码记录/YOLOV8/dataset
+
+train: train
+
+val: val
+
+nc: 1
+
+names: ['balloon']
